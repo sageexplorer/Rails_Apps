@@ -1,0 +1,34 @@
+<div class="container">
+  <p class="bg-info"> Hello Player, please click on the link to see if you win. You are playing against a computer. </p>
+
+  <p class="lead"> What is your Pick? </p>
+
+
+  <a href='/make_answer?answer=rock'>1. Rock</a>
+  <br> <br>
+  <a href='/make_answer?answer=paper'>2. Paper</a>
+  <br><br>
+  <a href='/make_answer?answer=scissors'>3. Scissors</a>
+  <br><br>
+  <p>  Total wins for you is: <strong> <%= $wins %> </strong>..and You Lost: <strong> <%= $played - $wins %> </strong><button class ="btn btn-Success"onclick="myFunction()">  Update Score</button> </p>
+  <footer>Hope you win this Game!!!</footer>
+
+  <script>
+      function myFunction() {
+          location.reload();
+      }
+  </script>
+
+ </div>
+</div>
+
+
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
