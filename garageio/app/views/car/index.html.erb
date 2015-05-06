@@ -1,0 +1,23 @@
+<h1>Garagio App</h1>
+
+<br>
+
+Where all the top cars displayed.
+
+<br><br>
+
+<br>
+
+
+<% @cars.each_with_index do |car,i| %>
+<% next if car.make == nil %>
+<% next if car.model == nil %>
+    <%= car.make %>
+    <%= car.model %>,
+    <%= car.color %>
+    <br>
+<% end %>
+
+<br>
+
+<a href="/new"> <br> Add a New Car </a>
