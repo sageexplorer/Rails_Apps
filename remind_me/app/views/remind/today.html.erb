@@ -1,0 +1,13 @@
+Today's messages are:
+
+
+<%@message.each do |message| %>
+
+<%next if message.message =~/hell.*/ %>
+<%= message.message %>.....
+<%= message.date %>
+<br>
+<% end %>
+<br>
+
+<a href="/" > Home </a>
