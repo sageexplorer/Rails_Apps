@@ -1,0 +1,21 @@
+<div id="main-container" class="container">
+
+  <h1> All Dogs on the showcase:</h1>
+
+  <br>
+
+  <p>
+
+    <% @dog.each do |d| %>
+        <a href="/index/<%= d.id %>"> <%= d.name %></a>
+        <br>
+    <% end %>
+
+
+    <br>
+
+    <a href="/new"> Add a New Dog</a>
+
+  </p>
+
+</div>

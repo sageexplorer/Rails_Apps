@@ -1,0 +1,26 @@
+<div id="main-container" class="container">
+  <h1>Fill the form to add a new dog:</h1>
+  <br>
+  <%= form_for :dog do |f| %>
+      Name
+      <%= f.text_field :name %> <br><br>
+      Breed
+      <%= f.text_field :breed %> <br><br>
+      Color
+      <%= f.text_field :color %> <br><br>
+      Size
+      <%= f.text_field :size %> <br><br>
+      Age
+      <%= f.text_field :age %> <br><br>
+      Dog URL
+      <%= f.text_field :dog_url %> <br><br>
+      <%= f.submit "Add a dog" %>
+
+  <% end %>
+</div>
+
+
+
+
+
+
