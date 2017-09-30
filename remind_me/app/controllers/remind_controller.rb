@@ -50,12 +50,12 @@ class RemindController < ApplicationController
 
   #This calculates when to send message
   def calculate(message, phone)
-    account_sid = 'AC8b0a0fa81e3da83139a539e6f35e0aa0'
-    auth_token = 'fb21577e4493c4ed222bfbed2b8fcfae'
+    account_sid = ''
+    auth_token  = ''
     @client = Twilio::REST::Client.new account_sid, auth_token
     message = @client.account.messages.create(:body => message,
                                               :to => "+1#{phone}",
-                                              :from => "(424) 276-6896"
+                                              :from => "() -6896"
     )
     puts message.to
   end
